@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "nuvem.com.appzone",
+                 "sha256_cert_fingerprints": ["66:9D:7C:73:DD:FA:94:E4:CD:BA:D0:24:C9:7C:DC:2A:8A:50:3C:5B:97:6C:30:63:BC:BE:D3:BD:2D:73:2E:E9"] }
+  }]
