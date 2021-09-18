@@ -2,10 +2,10 @@
   "applinks": {
       "details": [
            {
-             "apps": [ "1444690074.nuvem.br.com.appzone" ],
+             "apps": [ ],
              "details": [
                {
-                   "appID": "1444690074.nuvem.br.com.appzone",
+                   "appID": "FHBH3YV995.nuvem.br.com.appzone",
                    "paths": [ "/users/*", "/groups/*"]
                }
            ]
