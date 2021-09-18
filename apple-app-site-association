@@ -1,0 +1,23 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "1444690074.nuvem.br.com.appzone", "1444690074.nuvem.br.com.appzone2" ],
+             "components": [
+               {
+                  "/": "/users/*",
+                  "comment": "Matches any URL whose path starts with /users/"
+               },
+               {
+                "/": "/groups/*",
+                "comment": "Matches any URL whose path starts with /groups/"
+             }
+             ]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "1444690074.nuvem.br.com.appzone" ]
+   }
+
+}
