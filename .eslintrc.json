@@ -1,0 +1,91 @@
+{
+    "env": {
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react-hooks/exhaustive-deps": "error",
+        "react/prop-types": "off",
+        "no-plusplus": "off",
+        "no-unused-expressions": "off",
+        "no-shadow": "off",
+        "no-param-reassign": "off",
+        "@typescript-eslint/camelcase": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/no-unescaped-entities": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "global-require": "off",
+        "prefer-rest-params": "off",
+        "@typescript-eslint/no-this-alias": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "no-nested-ternary": "off",
+        "react/no-unused-prop-types": "off",
+        "import/no-extraneous-dependencies": "off",
+        "radix": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.test.tsx",
+                "*.test.ts"
+            ], // Or *.test.js
+            "rules": {
+                "import/no-extraneous-dependencies": "off"
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}
