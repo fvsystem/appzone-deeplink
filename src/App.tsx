@@ -1,18 +1,16 @@
 import React from 'react';
-import Android from './screens/Android';
-import Desktop from './screens/Desktop';
-import Ios from './screens/Ios';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Screens from './screens';
 
 function App(): JSX.Element {
-  const isAndroid = navigator.userAgent.toLowerCase().indexOf('android') > -1;
-  const isIOS = navigator.userAgent.toLowerCase().indexOf('iphone') > -1;
-  const isNotAnyMobile = !isAndroid && !isIOS;
   return (
-    <>
-      {isAndroid && <Android />}
-      {isIOS && <Ios />}
-      {isNotAnyMobile && <Desktop />}
-    </>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Screens />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
